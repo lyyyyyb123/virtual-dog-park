@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Dog Park</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🐾 Virtual Dog Park</h1>
+        <p>Meet your new furry friend!</p>
+    </header>
+
+    <main>
+        <section id="encyclopedia">
+            <h2>Dog Encyclopedia</h2>
+            <p>Discover three wonderful dog breeds.</p>
+
+            <div class="dog-list">
+                <article class="dog-card">
+                    <img src="assets/beagle.svg" alt="Beagle illustration">
+                    <h3>Beagle</h3>
+                    <p>Friendly, curious, and full of energy.</p>
+                    <p><strong>Care tip:</strong> Beagles need daily walks and time to explore scents.</p>
+                </article>
+
+                <article class="dog-card">
+                    <img src="assets/golden-retriever.svg" alt="Golden Retriever illustration">
+                    <h3>Golden Retriever</h3>
+                    <p>Kind, intelligent, and eager to please.</p>
+                    <p><strong>Care tip:</strong> Give them regular exercise, grooming, and company.</p>
+                </article>
+
+                <article class="dog-card">
+                    <img src="assets/poodle.svg" alt="Poodle illustration">
+                    <h3>Poodle</h3>
+                    <p>Smart, playful, and elegant.</p>
+                    <p><strong>Care tip:</strong> Brush their coat regularly and provide mental activities.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="adoption">
+            <h2>My Virtual Dog</h2>
+            <p>Choose a breed and give your dog a name.</p>
+
+            <label for="dog-name">Dog's name (1–20 characters)</label>
+            <input id="dog-name" type="text" maxlength="100" placeholder="Enter a name">
+
+            <label for="dog-breed">Choose a breed</label>
+            <select id="dog-breed">
+                <option value="Beagle">Beagle</option>
+                <option value="Golden Retriever">Golden Retriever</option>
+                <option value="Poodle">Poodle</option>
+            </select>
+
+            <button id="adopt-button">Adopt My Dog</button>
+            <p id="form-message" role="status"></p>
+
+            <div id="pet-area" hidden>
+                <h3 id="pet-name"></h3>
+                <p id="pet-details"></p>
+                <p id="pet-day"></p>
+                <p id="pet-stage"></p>
+                <p>Happiness: <span id="happiness-value">50</span>/100</p>
+                <progress id="happiness-bar" value="50" max="100"></progress>
+
+                <div class="pet-actions">
+                    <button id="feed-button">🍖 Feed</button>
+                    <button id="play-button">🎾 Play</button>
+                    <button id="next-day-button">🌞 Next Day</button>
+                    <button id="start-over-button">Start Over</button>
+                </div>
+                <p id="pet-message" role="status"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Virtual Dog Park — A beginner web programming project.</p>
+        <p>This website explores dog breeds and simulates caring for a virtual pet.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

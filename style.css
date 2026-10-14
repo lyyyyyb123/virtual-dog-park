@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8ef;
+    color: #3d342e;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f4b183;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    width: min(1000px, 92%);
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 24px;
+    margin-bottom: 28px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dog-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.dog-card {
+    background-color: #fff4e5;
+    border-radius: 12px;
+    padding: 16px;
+    overflow-wrap: anywhere;
+}
+
+.dog-card img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 160px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.dog-card h3 {
+    color: #9a5425;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #c8b8a8;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    margin-top: 16px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #a85d32;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #804323;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #e9a23b;
+    outline-offset: 3px;
+}
+
+.pet-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+progress {
+    width: 100%;
+    height: 22px;
+    accent-color: #48a868;
+}
+
+#form-message,
+#pet-message {
+    color: #9a5425;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6b5a4d;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 700px) {
+    .dog-list {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 16px;
+    }
+}
